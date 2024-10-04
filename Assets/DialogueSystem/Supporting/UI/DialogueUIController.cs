@@ -15,7 +15,7 @@ public class DialogueUIController : MonoBehaviour
 
     [Tooltip("Текст пропуска")]
     [SerializeField]
-    private TextPanel skipPanel;
+    private GameObject skipPanel;
 
     [Tooltip("Панель-подсказка")]
     [SerializeField]
@@ -39,7 +39,7 @@ public class DialogueUIController : MonoBehaviour
 
     private void Start()
     {
-        skipPanel.panel.SetActive(false);
+        skipPanel.SetActive(false);
         subsPanel.panel.SetActive(false);
         infoTipPanel.panel.SetActive(false);
         characterNamePanel.panel.SetActive(false);
@@ -68,7 +68,7 @@ public class DialogueUIController : MonoBehaviour
         subsPanel.panel.SetActive(false);
     }
 
-    public void SetSkipTipState(bool value) => skipPanel.panel.SetActive(value);
+    public void SetSkipTipState(bool value) => skipPanel.SetActive(value);
     public void SetInfoTipState(bool value) => infoTipPanel.panel.SetActive(value);
     public void SetNamePanelState(bool value) => characterNamePanel.panel.SetActive(value);
 

@@ -61,7 +61,15 @@ public class DialogueScenePoint : MonoBehaviour
     void Update()
     {
         CheckReplic();
-        if(Input.GetKeyDown(skipButton) && skip == 1)
+        if(Input.GetKeyDown(skipButton))
+        {
+            NextReplica();
+        }
+    }
+
+    public void NextReplica()
+    {
+        if(skip == 1)
         {
             skip = 2;
         }
