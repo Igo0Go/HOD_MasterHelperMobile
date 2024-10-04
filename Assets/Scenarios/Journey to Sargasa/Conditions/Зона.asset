@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd03a44f826095f4483f86aeed342b95, type: 3}
+  m_Name: "\u0417\u043E\u043D\u0430"
+  m_EditorClassIdentifier: 
+  parametres:
+  - type: 0
+    parameterName: "\u0414\u0435\u043D\u044C"
+    intValue: 0
+    boolValue: 0
+  - type: 0
+    parameterName: "\u041F\u043E\u043C\u0435\u0449\u0435\u043D\u0438\u0435"
+    intValue: 0
+    boolValue: 0
+  - type: 0
+    parameterName: "\u0421\u0432\u0435\u0442"
+    intValue: 0
+    boolValue: 0
+  - type: 0
+    parameterName: "\u041E\u0433\u043E\u043D\u044C"
+    intValue: 0
+    boolValue: 0
+  - type: 0
+    parameterName: "\u0422\u043E\u043A"
+    intValue: 0
+    boolValue: 0
+  - type: 0
+    parameterName: "\u0412\u043E\u0434\u0430"
+    intValue: 0
+    boolValue: 0
+  - type: 0
+    parameterName: "\u041C\u043E\u0440\u043E\u0437"
+    intValue: 0
+    boolValue: 0
