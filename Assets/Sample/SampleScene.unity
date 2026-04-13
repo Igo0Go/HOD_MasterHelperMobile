@@ -1486,7 +1486,7 @@ MonoBehaviour:
   debug: 0
   useAnimations: 0
   teleportPlayersToPositions: 0
-  playOnStart: 0
+  playOnStart: 1
   clearUsingInReplics: 0
   useNetwork: 0
   playerRole: {fileID: 0}

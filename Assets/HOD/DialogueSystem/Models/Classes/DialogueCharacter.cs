@@ -26,10 +26,28 @@ public class DialogueCharacter : ScriptableObject
         MultidimensionalPoint answerPoint;
         for (int i = 0; i < answers.Count; i++)
         {
-            if(answers[i].answerMode == AnswerMode.AutoChoiсe)
+            if(answers[i].answerMode != AnswerMode.Manual || answers[i].answerMode != AnswerMode.Condition)
             {
+                bool correct = true;
+                for (int j = 0; j < answers[i].answerStats.Count; j++)
+                {
+                    StatItem statItem = answers[i].answerStats[j];
+                    correct = statItem.CheckValue(characterStats[j].statValue);
+
+                    if (!correct)
+                    {
+                        break;
+                    }
+                }
+                if (correct)
+                {
+                    return i;
+                }
+
+
                 if (!answers[i].answerStats.Exists(o => (int)o.mode > 1))
                 {
+
                     answerPoint = new MultidimensionalPoint(answers[i], this);
                     float bufer = persPoint.GetDistance(answerPoint);
                     if (bufer < resultDistance)

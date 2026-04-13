@@ -160,6 +160,24 @@ public class StatItem
         mode = AnswerStatMode.Цель;
         this.value = value;
     }
+
+    public bool CheckValue(float inputValue)
+    {
+        switch (mode)
+        {
+            case AnswerStatMode.Больше:
+                return inputValue > value;
+            case AnswerStatMode.БольшеИлиРавно:
+                return inputValue >= value;
+            case AnswerStatMode.Меньше:
+                return inputValue < value;
+            case AnswerStatMode.МеньшеИлиРавно:
+                return inputValue <= value;
+            case AnswerStatMode.Игнорируется:
+                return true;
+        }
+        return false;
+    }
 }
 
 public enum AnswerMode
